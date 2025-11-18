@@ -6,18 +6,18 @@
 		},
 		SELECTORS: {
 			body: "body",
-			navigation: "#cs-navigation",
-			hamburger: "#cs-navigation .cs-toggle",
-			menuWrapper: "#cs-ul-wrapper",
-			dropdownToggle: ".cs-dropdown-toggle",
-			dropdown: ".cs-dropdown",
-			dropdownMenu: ".cs-drop-ul",
-			navButton: ".cs-nav-button",
+			navigation: "#navigation",
+			hamburger: "#navigation .toggle",
+			menuWrapper: "#ul-wrapper",
+			dropdownToggle: ".dropdown-toggle",
+			dropdown: ".dropdown",
+			dropdownMenu: ".drop-ul",
+			navButton: ".nav-button",
 			darkModeToggle: "#dark-mode-toggle",
 		},
 		CLASSES: {
-			active: "cs-active",
-			menuOpen: "cs-open",
+			active: "active",
+			menuOpen: "open",
 		},
 	};
 

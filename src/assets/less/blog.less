@@ -21,7 +21,7 @@
         align-items: center;
         gap: (20/16rem);
 
-        .cs-featured-group {
+        .featured-group {
             width: 100%;
             padding: (32/16rem) (20/16rem);
             border: 1px solid #ebebeb;
@@ -32,7 +32,7 @@
             align-items: center;
         }
 
-        .cs-sidebar-header {
+        .sidebar-header {
             font-size: (20/16rem);
             font-weight: bold;
             text-align: center;
@@ -53,7 +53,7 @@
             }
         }
 
-        .cs-sidebar-link {
+        .sidebar-link {
             text-decoration: none;
             width: 100%;
             padding: (24/16rem) 0;
@@ -73,7 +73,7 @@
             }
         }
 
-        .cs-sidebar-img {
+        .sidebar-img {
             width: (60/16rem);
             height: (60/16rem);
             overflow: hidden;
@@ -92,7 +92,7 @@
             }
         }
 
-        .cs-sidebar-title {
+        .sidebar-title {
             font-size: (16/16rem);
             font-weight: 700;
             line-height: 1.5em;
@@ -103,14 +103,14 @@
             display: block;
         }
 
-        .cs-sidebar-date {
+        .sidebar-date {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
             display: block;
         }
 
-        .cs-toc {
+        .toc {
             font-size: (14/16rem);
             list-style: none;
             width: 100%;
@@ -121,23 +121,23 @@
             gap: 1rem;
         }
 
-        .cs-toc-item {
+        .toc-item {
             list-style: none;
             margin: 0;
             padding: 0;
 
-            &.cs-active {
+            &.active {
                 padding-left: (16/16rem);
                 border-left: 4px solid var(--primary);
 
-                .cs-toc-link {
+                .toc-link {
                     font-weight: 700;
                     color: var(--primary);
                 }
             }
         }
 
-        .cs-toc-link {
+        .toc-link {
             text-decoration: none;
             width: 100%;
             color: var(--bodyTextColor);
@@ -164,28 +164,28 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #blog-sidebar {
-            .cs-sidebar-header,
-            .cs-toc-link,
-            .cs-sidebar-title,
-            .cs-sidebar-date {
+            .sidebar-header,
+            .toc-link,
+            .sidebar-title,
+            .sidebar-date {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-sidebar-date {
+            .sidebar-date {
                 opacity: 0.8;
             }
 
-            .cs-sidebar-header {
+            .sidebar-header {
                 &::after {
                     background-color: var(--bodyTextColorWhite);
                 }
             }
 
-            .cs-toc-item {
-                &.cs-active {
+            .toc-item {
+                &.active {
                     border-color: var(--secondary);
 
-                    .cs-toc-link {
+                    .toc-link {
                         color: var(--secondary);
                     }
                 }
@@ -212,7 +212,7 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
 
-        .cs-container {
+        .container {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -222,14 +222,14 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-article {
+        .article {
             width: 100%;
             overflow: hidden;
             display: block;
             flex: none;
         }
 
-        .cs-article-image {
+        .article-image {
             width: 100%;
             /* 200px - 400px */
             height: clamp(12.5rem, 30vw, 25rem);
@@ -248,21 +248,21 @@
             }
         }
 
-        .cs-article-group {
+        .article-group {
             /* 30px - 50px */
             padding: clamp(1.875rem, 5vw, 3.125rem);
             border: 1px solid #ebebeb;
             border-radius: 0 0 (8/16rem) (8/16rem);
         }
 
-        .cs-author-group {
+        .author-group {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: (12/16rem);
         }
 
-        .cs-author-img {
+        .author-img {
             width: (32/16rem);
             height: (32/16rem);
             overflow: hidden;
@@ -280,14 +280,14 @@
             }
         }
 
-        .cs-author-name,
-        .cs-date {
+        .author-name,
+        .date {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
         }
 
-        .cs-dot {
+        .dot {
             width: 3px;
             height: 3px;
             background-color: var(--primary);
@@ -295,7 +295,7 @@
             display: block;
         }
 
-        .cs-article-title {
+        .article-title {
             /* 20px - 32px */
             font-size: clamp(1.25rem, 5vw, 2rem);
             font-weight: 700;
@@ -304,7 +304,7 @@
             color: var(--headerColor);
         }
 
-        .cs-article-desc {
+        .article-desc {
             font-size: (16/16rem);
             line-height: 1.5em;
             margin: (16/16rem) 0 (32/16rem);
@@ -319,7 +319,7 @@
         flex-direction: row;
         align-items: flex-start;
 
-        .cs-article-title {
+        .article-title {
             max-width: (550/16rem);
         }
     }
@@ -329,16 +329,16 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #blog-listing {
-            .cs-article-title,
-            .cs-author-name,
-            .cs-date,
-            .cs-article-desc {
+            .article-title,
+            .author-name,
+            .date,
+            .article-desc {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-author-name,
-            .cs-date,
-            .cs-article-desc {
+            .author-name,
+            .date,
+            .article-desc {
                 opacity: 0.8;
             }
         }
@@ -362,7 +362,7 @@
         align-items: center;
         gap: (64/16rem);
 
-        .cs-container {
+        .container {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -371,13 +371,13 @@
             gap: (64/16rem);
         }
 
-        .cs-article-post {
+        .article-post {
             width: 100%;
             max-width: (800/16rem);
             display: block;
         }
 
-        .cs-article-image {
+        .article-image {
             width: 100%;
             /* 200px - 400px */
             height: clamp(12.5rem, 30vw, 25rem);
@@ -397,7 +397,7 @@
             }
         }
 
-        .cs-author-img {
+        .author-img {
             width: (32/16rem);
             height: (32/16rem);
             overflow: hidden;
@@ -415,21 +415,21 @@
             }
         }
 
-        .cs-author-group {
+        .author-group {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: (12/16rem);
         }
 
-        .cs-author-name,
-        .cs-date {
+        .author-name,
+        .date {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
         }
 
-        .cs-dot {
+        .dot {
             width: (3/16rem);
             height: (3/16rem);
             background-color: var(--primary);
@@ -437,7 +437,7 @@
             display: block;
         }
 
-        .cs-article-title {
+        .article-title {
             /* 20px - 39px */
             font-size: clamp(1.25rem, 5vw, 2.4375rem);
             font-weight: 700;
@@ -447,7 +447,7 @@
             color: var(--headerColor);
         }
 
-        .cs-article-content {
+        .article-content {
             margin-top: (16/16rem);
             padding-top: (24/16rem);
             border-top: 1px solid #ebebeb;
@@ -461,8 +461,8 @@
             }
         }
 
-        .cs-article-group,
-        .cs-article-content {
+        .article-group,
+        .article-content {
             h2 {
                 font-size: (28/16rem);
                 font-weight: 700;
@@ -497,13 +497,13 @@
                 color: var(--bodyTextColor);
             }
 
-            a:not(.cs-button-solid) {
+            a:not(.button-solid) {
                 font-size: inherit;
                 text-decoration: underline;
                 color: var(--secondary);
             }
 
-            .cs-button-solid {
+            .button-solid {
                 margin-bottom: (32/16rem);
             }
 
@@ -536,8 +536,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #single-article {
-            .cs-article-group,
-            .cs-article-content {
+            .article-group,
+            .article-content {
                 h1,
                 h2,
                 h3,

@@ -15,7 +15,7 @@
         padding: var(--sectionPadding);
         position: relative;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: (1280/16rem);
             margin: auto;
@@ -26,7 +26,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             text-align: center;
             width: 100%;
             display: flex;
@@ -34,7 +34,7 @@
             align-items: center;
         }
 
-        .cs-image-group {
+        .image-group {
             /* used rem so it doesn't scale with the font size of on parent */
             font-size: ~"min(1.1vw, 1em)";
             width: 100%;
@@ -47,7 +47,7 @@
             gap: clamp(0.5rem, 2vw, 1.25rem);
         }
 
-        .cs-row {
+        .row {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -57,7 +57,7 @@
             gap: clamp(0.5rem, 2vw, 1.25rem);
         }
 
-        .cs-picture {
+        .picture {
             width: 100%;
             position: relative;
             display: block;
@@ -74,49 +74,49 @@
             }
         }
 
-        .cs-row-1 {
-            .cs-picture-1 {
+        .row-1 {
+            .picture-1 {
                 height: (567/16em);
             }
 
-            .cs-picture-2 {
+            .picture-2 {
                 height: (629/16em);
             }
 
-            .cs-picture-3 {
+            .picture-3 {
                 height: (512/16em);
             }
         }
 
-        .cs-row-2 {
-            .cs-picture-1 {
+        .row-2 {
+            .picture-1 {
                 height: (492/16em);
             }
 
-            .cs-picture-2 {
+            .picture-2 {
                 height: (517/16em);
             }
 
-            .cs-picture-3 {
+            .picture-3 {
                 height: (629/16em);
             }
         }
 
-        .cs-row-3 {
-            .cs-picture-1 {
+        .row-3 {
+            .picture-1 {
                 height: (625/16em);
             }
 
-            .cs-picture-2 {
+            .picture-2 {
                 height: (452/16em);
             }
 
-            .cs-picture-3 {
+            .picture-3 {
                 height: (629/16em);
             }
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -162,7 +162,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #gallery-48 {
-            .cs-title {
+            .title {
                 color: var(--bodyTextColorWhite);
             }
         }

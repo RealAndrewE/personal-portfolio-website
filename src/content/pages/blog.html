@@ -17,24 +17,22 @@ permalink: "/blog/"
     <!-- ============================================ -->
 
     <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">Blog</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/blog/" class="cs-link cs-active">Blog</a>
+        <div class="container">
+            <span class="int-title">Blog</span>
+            <div class="breadcrumbs">
+                <a href="/" class="link">Home</a>
+                <a href="/blog/" class="link active">Blog</a>
             </div>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
+        <picture class="background">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
+
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
+
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
@@ -47,50 +45,50 @@ permalink: "/blog/"
     <!-- ============================================ -->
 
     <div id="blog-listing">
-        <div class="cs-container">
+        <div class="container">
             {% if collections.post | length == 0 %}
-                <h1 class="cs-title">
+                <h1 class="title">
                     No Recent Posts
                 </h1>
             {% else %}
                 {%- for post in collections.post | reverse -%}
-                    <article class="cs-article">
-                        <picture class="cs-article-image">
-                            <!--Mobile Image-->
+                    <article class="article">
+                        <picture class="article-image">
                             <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | avif %}" type="image/avif">
                             <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
                             <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | jpeg %}" type="image/jpeg">
-                            <!--Tablet Image-->
+
                             <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | avif %}" type="image/avif">
                             <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | webp %}" type="image/webp">
                             <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | jpeg %}" type="image/jpeg">
-                            <!--Desktop Image-->
+
                             <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | avif %}" type="image/avif">
                             <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | webp %}" type="image/webp">
                             <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | jpeg %}" type="image/jpeg">
                             <img src="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | jpeg %}" alt="{{ post.data.alt }}" width="824" height="400" decoding="async">
                         </picture>
-                        <div class="cs-article-group">
-                            <div class="cs-author-group">
-                                <picture class="cs-author-img">
+                        <div class="article-group">
+                            <div class="author-group">
+                                <picture class="author-img">
                                     <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true" />
                                 </picture>
-                                <span class="cs-author-name">{{ post.data.author }}</span>
-                                <span aria-hidden="true" class="cs-dot"></span>
-                                <span class="cs-date">{{ post.date | postDate }}</span>
+                                <span class="author-name">{{ post.data.author }}</span>
+                                <span aria-hidden="true" class="dot"></span>
+                                <span class="date">{{ post.date | postDate }}</span>
                             </div>
-                            <h2 class="cs-article-title">
+                            <h2 class="article-title">
                                 {{ post.data.title }}
                             </h2>
-                            <p class="cs-article-desc">
+                            <p class="article-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="cs-button-solid">Continue Reading</a>
+                            <a href="{{ post.url }}" class="button-solid">Continue Reading</a>
                         </div>
                     </article>
                 {%- endfor -%}
             {% endif %}
         </div>
+
 
         {% include 'components/featured-posts.html' %}
     </div>

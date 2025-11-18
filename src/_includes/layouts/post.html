@@ -14,9 +14,9 @@
     <!-- ============================================ -->
 
     <div id="banner-310">
-        <div class="cs-container"></div>
+        <div class="container"></div>
         <!--Background Image-->
-        <picture class="cs-background">
+        <picture class="background">
             <!--Mobile Image-->
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
@@ -38,9 +38,9 @@
     <!-- ============================================ -->
 
     <div id="single-article">
-        <div class="cs-container">
-            <article class="cs-article-post">
-                <picture class="cs-article-image">
+        <div class="container">
+            <article class="article-post">
+                <picture class="article-image">
                     <!--Mobile Image-->
                     <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | avif %}" type="image/avif">
                     <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
@@ -55,18 +55,18 @@
                     <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" type="image/jpeg">
                     <img src="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" alt="{{ alt }}" width="800" height="400" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
-                <div class="cs-article-group">
-                    <h1 class="cs-article-title">{{ title }}</h1>
-                    <div class="cs-author-group">
-                        <picture class="cs-author-img">
+                <div class="article-group">
+                    <h1 class="article-title">{{ title }}</h1>
+                    <div class="author-group">
+                        <picture class="author-img">
                             <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
                         </picture>
-                        <span class="cs-author-name">{{ author }}</span>
-                        <span aria-hidden="true" class="cs-dot"></span>
-                        <span class="cs-date">{{ date | postDate }}</span>
+                        <span class="author-name">{{ author }}</span>
+                        <span aria-hidden="true" class="dot"></span>
+                        <span class="date">{{ date | postDate }}</span>
                     </div>
                 </div>
-                <section class="cs-article-content">
+                <section class="article-content">
                     {{ content | safe }}
                 </section>
             </article>

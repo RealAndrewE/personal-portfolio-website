@@ -14,7 +14,7 @@
     #RPsbs-313 {
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: (1280/16rem);
             margin: auto;
@@ -25,7 +25,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -36,14 +36,14 @@
             align-items: flex-start;
         }
 
-        .cs-text {
+        .text {
             margin-bottom: (16/16rem);
             &:last-of-type {
                 margin-bottom: (32/16rem);
             }
         }
 
-        .cs-quote {
+        .quote {
             margin: 0 0 (32/16rem) 0;
             /* 16px - 32px */
             padding: clamp(1rem, 3vw, 2rem);
@@ -52,7 +52,7 @@
             position: relative;
         }
 
-        .cs-quote-text {
+        .quote-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             line-height: 1.5em;
@@ -61,7 +61,7 @@
             display: block;
         }
 
-        .cs-name {
+        .name {
             font-size: (16/16rem);
             line-height: 1.2em;
             text-transform: uppercase;
@@ -71,14 +71,14 @@
             display: block;
         }
 
-        .cs-job {
+        .job {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: #767676;
             display: block;
         }
 
-        .cs-quote-icon {
+        .quote-icon {
             /* 60px - 136px */
             width: clamp(3.75rem, 10vw, 8.5rem);
             height: auto;
@@ -88,7 +88,7 @@
             right: clamp(1rem, 4vw, 2rem);
         }
 
-        .cs-image-group {
+        .image-group {
             /* scaling the font size with the view width */
             font-size: ~"min(2.31vw, .7em)";
             /* using ems so we can use font size to scale the whole section */
@@ -97,7 +97,7 @@
             position: relative;
         }
 
-        .cs-picture {
+        .picture {
             border-radius: (24/16em);
             /* clips img tag corners */
             overflow: hidden;
@@ -115,14 +115,14 @@
             }
         }
 
-        .cs-picture1 {
+        .picture1 {
             width: (522/16em);
             height: (581/16em);
             left: 0;
             top: 0;
         }
 
-        .cs-picture2 {
+        .picture2 {
             width: (414/16em);
             height: (400/16em);
             background-color: #fff;
@@ -138,18 +138,18 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #RPsbs-313 {
-        .cs-container {
+        .container {
             flex-flow: row;
             justify-content: space-between;
             gap: (52/16rem);
         }
 
-        .cs-image-group {
+        .image-group {
             font-size: ~"min(1.2vw, 1em)";
             flex: none;
         }
 
-        .cs-content {
+        .content {
             margin: 0;
         }
     }
@@ -159,41 +159,41 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #RPsbs-313 {
-            .cs-image-group {
+            .image-group {
                 &:before,
                 &:after {
                     background: var(--accent);
                 }
             }
 
-            .cs-picture2 {
+            .picture2 {
                 background-color: var(--dark);
                 /* 6px - 12px */
                 border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
             }
 
-            .cs-topper {
+            .topper {
                 color: var(--primaryLight);
             }
 
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-quote-text,
-            .cs-name {
+            .title,
+            .text,
+            .h3,
+            .quote-text,
+            .name {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-quote {
+            .quote {
                 background-color: var(--accent);
             }
 
-            .cs-job {
+            .job {
                 color: var(--bodyTextColorWhite);
                 opacity: 0.8;
             }
 
-            .cs-quote-icon {
+            .quote-icon {
                 opacity: 0.2;
             }
         }
