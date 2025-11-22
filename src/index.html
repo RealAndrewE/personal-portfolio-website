@@ -83,9 +83,9 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     </div>
 
     <picture class="background">
-        <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg">
-        <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg">
-        <img decoding="async" src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="meeting" width="2250" height="1500" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/conference.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/conference.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+        <img decoding="async" src="{% getUrl "/assets/images/conference.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp" alt="conference" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
               
@@ -175,9 +175,9 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <ul class="card-group">
             <li class="item">
                 <picture class="picture">
-                    <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/8837549/pexels-photo-8837549.jpeg">
-                    <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/8837549/pexels-photo-8837549.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/8837549/pexels-photo-8837549.jpeg" alt="CEO" width="305" height="335">
+                    <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/Employee1.webp" | resize({ width: 540, height: 470 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="{% getUrl "/assets/images/Employee1.webp" | resize({ width: 540, height: 400 }) | webp %}" type="image/webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl "/assets/images/Employee1.webp" | resize({ width: 440, height: 400 }) | webp %}" type="image/webp" alt="CEO" width="305" height="335">
                 </picture>
                 <div class="info">
                     <span class="name">John Doe</span>
@@ -186,9 +186,9 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </li>
             <li class="item">
                 <picture class="picture">
-                    <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/6346972/pexels-photo-6346972.jpeg">
-                    <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/6346972/pexels-photo-6346972.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/6346972/pexels-photo-6346972.jpeg" alt="CEO" width="305" height="335">
+                    <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/Employee2.webp" | resize({ width: 540, height: 470 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="{% getUrl "/assets/images/Employee2.webp" | resize({ width: 540, height: 400 }) | webp %}" type="image/webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl "/assets/images/Employee2.webp" | resize({ width: 440, height: 400 }) | webp %}" type="image/webp" alt="CEO" width="305" height="335">
                 </picture>
                 <div class="info">
                     <span class="name">John Doe</span>
@@ -197,9 +197,9 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </li>
             <li class="item">
                 <picture class="picture">
-                    <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/15029211/pexels-photo-15029211.jpeg">
-                    <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/15029211/pexels-photo-15029211.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/15029211/pexels-photo-15029211.jpeg" alt="CEO" width="305" height="335">
+                    <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/Employee3.webp" | resize({ width: 540, height: 470 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="{% getUrl "/assets/images/Employee3.webp" | resize({ width: 540, height: 400 }) | webp %}" type="image/webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl "/assets/images/Employee3.webp" | resize({ width: 440, height: 400 }) | webp %}" type="image/webp" alt="CEO" width="305" height="335">
                 </picture>
                 <div class="info">
                     <span class="name">John Doe</span>
